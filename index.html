@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="кг">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <div class="cart">
+      <h2 class="cart-title">Корзина</h2>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Товар</th>
+            <th>Цена</th>
+            <th>Количество</th>
+            <th>Итого</th>
+            <th>Действия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="item">
+                <img
+                  src="./assets/images/1.jpg"
+                  alt="Торт Львенок"
+                  class="item-image"
+                />
+                <div class="item-info">
+                  <p class="item-name">Бенто торт Единорог — 500 г.</p>
+                  <a href="#" class="item-edit">Изменить начинку: Сметанник</a>
+                </div>
+              </div>
+            </td>
+            <td>2 700 ₽</td>
+            <td><input type="number" value="1" class="item-quantity" /></td>
+            <td>2 700 ₽</td>
+            <td><button class="item-remove">×</button></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item">
+                <img
+                  src="./assets/images/2.jpg"
+                  alt="Торт Львенок"
+                  class="item-image"
+                />
+                <div class="item-info">
+                  <p class="item-name">Бенто торт Котик Чибик — 500 г.</p>
+                  <a href="#" class="item-edit">Изменить начинку: Сметанник</a>
+                </div>
+              </div>
+            </td>
+            <td>2 900 ₽</td>
+            <td><input type="number" value="1" class="item-quantity" /></td>
+            <td>2 900 ₽</td>
+            <td><button class="item-remove">×</button></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item">
+                <img
+                  src="./assets/images/3.jpg"
+                  alt="Торт Львенок"
+                  class="item-image"
+                />
+                <div class="item-info">
+                  <p class="item-name">Бенто торт Львенок — 500 г.</p>
+                  <a href="#" class="item-edit">Изменить начинку: Сметанник</a>
+                </div>
+              </div>
+            </td>
+            <td>2 800 ₽</td>
+            <td><input type="number" value="1" class="item-quantity" /></td>
+            <td>2 800 ₽</td>
+            <td><button class="item-remove">×</button></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item">
+                <img
+                  src="./assets/images/4.jpg"
+                  alt="Торт Львенок"
+                  class="item-image"
+                />
+                <div class="item-info">
+                  <p class="item-name">Бенто торт Динозавр — 500 г.</p>
+                  <a href="#" class="item-edit">Изменить начинку: Сметанник</a>
+                </div>
+              </div>
+            </td>
+            <td>3 900 ₽</td>
+            <td><input type="number" value="1" class="item-quantity" /></td>
+            <td>3 900 ₽</td>
+            <td><button class="item-remove">×</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="cart-actions">
+        <input type="text" placeholder="Код купона" class="coupon-code" />
+        <button class="apply-coupon" onclick="applyCoupon()">
+          Применить купон
+        </button>
+        <button class="update-cart">Обновить корзину</button>
+      </div>
+      <div class="cart-summary">
+        <p class="summary-subtotal">Подытог: 12300 ₽</p>
+        <p class="summary-total"><strong>Итого: 8 700 ₽</strong></p>
+        <button class="checkout-button">Оформить заказ</button>
+      </div>
+    </div>
+    <script src="./cart.js"></script>
+  </body>
+</html>
